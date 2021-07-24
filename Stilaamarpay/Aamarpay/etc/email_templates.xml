@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:Magento:module:Magento_Email:etc/email_templates.xsd">
+    <template id="aamarpay_success_template" label="Order Successful" file="aamarpay/successemail.html" type="html" module="Stilaamarpay_Aamarpay" area="frontend"/>
+    
+    <template id="aamarpay_fail_template" label="Order Failed" file="aamarpay/failemail.html" type="html" module="Stilaamarpay_Aamarpay" area="frontend"/>
+    
+    <template id="aamarpay_cancel_template" label="Order Canceled" file="aamarpay/cancelemail.html" type="html" module="Stilaamarpay_Aamarpay" area="frontend"/>
+</config>

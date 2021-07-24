@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+      
+    <default>
+    <payment>
+      <aamarpay>
+        <active>1</active>
+                <title>aamarPay Payment Gateway</title>
+                <!-- <login_id backend_model="Magento\Config\Model\Config\Backend\Encrypted" /> -->
+                <pass_word_1 backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <order_status>pending_payment</order_status>
+                <instructions>Pay via aamarPay.</instructions>
+                <payment_action>true</payment_action>
+                <test>1</test>
+                <model>Stilaamarpay\Aamarpay\Model\Aamarpay</model>
+                <group>offline</group>
+                <cgi_url_test_mode>https://sandbox.aamarpay.com/request.php</cgi_url_test_mode>
+                <cgi_url>https://secure.aamarpay.com/request.php</cgi_url>
+      </aamarpay>
+    </payment>
+  </default>
+  <!-- <frontend>
+    <routers>
+      <aamarpay>
+        <use>standard</use>
+        <args>
+          <module>Stilaamarpay_Aamarpay</module>
+          <frontName>aamarpay</frontName>
+        </args>
+      </aamarpay>
+    </routers>
+  </frontend> -->
+</config>
